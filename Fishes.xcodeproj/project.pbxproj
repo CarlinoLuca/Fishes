@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4EAD8328632649007FD7C2 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CE4EAD8228632649007FD7C2 /* SwiftyJSON */; };
 		CEF1386B2861FDC700DD01E3 /* FishesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1386A2861FDC700DD01E3 /* FishesApp.swift */; };
 		CEF1386D2861FDC700DD01E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1386C2861FDC700DD01E3 /* ContentView.swift */; };
 		CEF1386F2861FDCB00DD01E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF1386E2861FDCB00DD01E3 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4EAD8328632649007FD7C2 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Fishes;
+			packageProductDependencies = (
+				CE4EAD8228632649007FD7C2 /* SwiftyJSON */,
+			);
 			productName = Fishes;
 			productReference = CEF138672861FDC700DD01E3 /* Fishes.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = CEF1385E2861FDC700DD01E3;
+			packageReferences = (
+				CE4EAD8128632649007FD7C2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = CEF138682861FDC700DD01E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE4EAD8128632649007FD7C2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE4EAD8228632649007FD7C2 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE4EAD8128632649007FD7C2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEF1385F2861FDC700DD01E3 /* Project object */;
 }
